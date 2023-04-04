@@ -1,0 +1,66 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+.card {
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15% auto;
+    padding: 25px;
+    max-width: 261px;
+    border-radius: 10px;
+    box-shadow: -1px 30px 0px 10px hsla(216, 93%, 5%, 0.3);
+}
+.nft {
+    width: 230px;
+    height: 240px;
+    border-radius: 10px;
+}
+.nft:hover {
+    content: url("../images/icon-view.svg");
+    background-color: hsla(178, 100%, 50%, 0.7);
+}
+.hed, .def, .val, .usr {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+}
+.def, .val, .usr {
+    font-size: 15px;
+    color:hsl(214, 4%, 64%);
+}
+.curr::before {
+    content: url("../images/icon-ethereum.svg"); 
+}
+.curr {
+    color: hsl(178, 100%, 50%);
+}
+.date::before {
+    padding-left: 15%;
+    content: url("../images/icon-clock.svg");
+}
+.usr {
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+.us {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    float: left;
+    margin: 5px;
+}
+@media only screen and (width < 500px) {
+    .card {
+        margin: 15% 10%;
+    }
+}
